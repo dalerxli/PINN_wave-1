@@ -1,6 +1,6 @@
 # PINN(s): Physics-Informed Neural Network(s)
 
-This is an implementation of [PINN(s): Physics-Informed Neural Network(s)](https://doi.org/10.1016/j.jcp.2018.10.045) to solve 2D wave equation under Dirichlet / Neumann boundary conditions. One can find 
+This is an implementation of [PINN(s): Physics-Informed Neural Network(s)](https://doi.org/10.1016/j.jcp.2018.10.045) on TensorFlow 2. This code solve 2D wave equation under Dirichlet / Neumann boundary condition without training data (data to fit initial & boundary conditions need to be provided). One can find and change the initial / boundary condition 
 
 
 Training could be accelerated with GPU-utilized  is speeded up with [L-LAAF](https://doi.org/10.1098/rspa.2020.0334)
@@ -23,10 +23,8 @@ Simply type
 </code>
 </p>
 with the following:
-| Attempt | #1  | #2  |
-| :---:   | :-: | :-: |
-| Seconds | 301 | 283 |
-
+packages
+version
 
 ## Reference:
 [1] Raissi, M., Perdikaris, P., Karniadakis, G.E.: Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations, Journal of Computational Physics, Vol. 378, pp. 686-707, 2019. 
