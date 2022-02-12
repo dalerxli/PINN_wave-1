@@ -23,6 +23,7 @@ Tested on
 <code>
   python 3.8.10
 </code>
+<br>
 with the following:
 
 |Package                      |Version|
