@@ -1,4 +1,4 @@
-# PINN_wave
+# PINN: Physics-Informed Neural Network (for 2D wave equation)
 
 This is an implementation of PINN(s): Physics-Informed Neural Network(s) to solve 2D wave equation. 
 
