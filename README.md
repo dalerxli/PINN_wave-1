@@ -3,13 +3,7 @@
 This is an implementation of PINN(s): Physics-Informed Neural Network(s) to solve 2D wave equation. 
 
 Reference:
-Raissi M., 
-author = {M. Raissi and P. Perdikaris and G.E. Karniadakis},
-Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations},
-Journal of Computational Physics},
-volume = {378},
-pages = {686-707},
-year = {2019},
+Raissi, M., Perdikaris, P., Karniadakis,  G.E.: Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations, Journal of Computational Physics, Vol. 378, pp. 686-707, 2019. 
 
 
 # Dependencies
