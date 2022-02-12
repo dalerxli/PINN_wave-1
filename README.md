@@ -24,8 +24,6 @@ Tested on
   python 3.8.10
 </code>
 with the following:
-packages
-version
 
 |Package                      |Version|
 | :---: | :---: |
