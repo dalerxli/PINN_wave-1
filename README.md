@@ -1,6 +1,6 @@
 # PINN: Physics-Informed Neural Network
 
-This is an implementation of [PINN(s): Physics-Informed Neural Network(s)](https://www.sciencedirect.com/science/article/pii/S0021999118307125) to solve 2D wave equation. It considers a square domain with Dirichlet / Neumann boundary condition, and is capable to simulate the wave propagation without any training data (data on initial & boundary conditions need to be provided). This code also investigates PINN-derived solution vs FDM (Finit Difference Method) approximation, and quantitatively compares their agreement. Training is speeded up with [L-LAAF](https://royalsocietypublishing.org/doi/10.1098/rspa.2020.0334), and could be further accelerated with GPU-utilized training. 
+This is an implementation of [PINN(s): Physics-Informed Neural Network(s)](https://www.sciencedirect.com/science/article/pii/S0021999118307125) to solve 2D wave equation. It considers a square domain with Dirichlet / Neumann boundary condition, and is capable to simulate the wave propagation without any training data (data on initial & boundary conditions need to be provided). This code also investigates PINN-derived solution vs FDM (Finit Difference Method) approximation, and quantitatively compares their agreement. Training is speeded up with [L-LAAF](https://royalsocietypublishing.org/doi/10.1098/rspa.2020.0334), and could be further accelerated by GPU-utilized training. 
 
 ## Usage
 Simply type 
