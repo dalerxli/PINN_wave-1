@@ -12,7 +12,13 @@ Simply type
   python main.py
 </code>
 </p>
-to run the code (this includes FDM simulation, PINN training, and inferece). Basic parameters (e.g., boundary condition, batch size, )
+to run the code (this includes FDM simulation, PINN training, and inferece). Basic parameters (e.g., network architecture, batch size, initializer, etc.) are found in 
+<p>
+<code>
+  params.py
+</code>
+</p>
+and could be modified depending on the problem setup. 
 
 ## Dependencies
 Tested on 
