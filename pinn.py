@@ -363,20 +363,6 @@ class PINN:
                     % (ep, ep_loss, ep_loss_ini, ep_loss_bnd, ep_loss_pde, elps))
                 t0 = time.time()
             
-            # if ep_loss < min_loss:
-            #     cp_path = "/cp.ckpt"
-            #     cp_dir  = os.path.dirname(cp_path)
-            #     ck_pt = tf.train.Checkpoint(step = tf.Variable(0), 
-            #                                 optimizer = self.optimizer, 
-            #                                 net = self.)
-            #     self.save_weights('./checkpoints/my_checkpoint')
-            #     min_loss = ep_loss
-            #     print(">>>>> program terminating since it found early stop triggered.")
-            #     print("\n************************************************************")
-            #     print("*****************     MAIN PROGRAM END     *****************")
-            #     print("************************************************************")
-            #     print(">>>>> end time:", datetime.datetime.now())
-        
                 if ep_loss < min_loss:
                     es_pat = 0
                     min_loss = ep_loss
