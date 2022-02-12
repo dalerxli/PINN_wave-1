@@ -4,6 +4,8 @@ all your params
 ********************************************************************************
 """
 
+import tensorflow as tf
+
 # network structure
 f_in  = 3
 f_out = 1
@@ -18,10 +20,16 @@ c_tol  = 1e-8
 # initializers
 w_init = "Glorot"
 b_init = "zeros"
+act = "tanh"
 
 # optimization
-act = "tanh"
-lr  = 5e-4
+lr0 = 1e-2
+gam = 1e-2
+lrd_exp = tf.keras.optimizers.schedules.ExponentialDecay(
+    initial_learning_rate = lr0, decay_steps = n_epch, decay_rate = gam, staircase=False)
+lrd_cos = tf.keras.optimizers.schedules.CosineDecay(
+    initial_learning_rate = lr0, decay_steps = n_epch, alpha = gam)
+lr  = lrd_cos
 opt = "Adam"
 f_scl = "minmax"   # "minmax" or "mean"
 laaf = True
