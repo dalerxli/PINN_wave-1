@@ -18,15 +18,13 @@ Tested on
 <br>
 <code>Python 3.8.10</code>
 <br>
-and the following environment. 
-
+and the following:
 | Package | Version |
 | :---: | :---: |
 | keras | 2.8.0 |
-| matplotlib|                    3.5.1| 
-| numpy|                         1.22.1| 
-| scipy|                         1.7.3| 
-| tensorflow|                    2.8.0| 
+| numpy | 1.22.1 | 
+| scipy |  1.7.3 | 
+| tensorflow | 2.8.0 |
 
 ### Reference:
 [1] Raissi, M., Perdikaris, P., Karniadakis,  G.E.: Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations, Journal of Computational Physics, Vol. 378, pp. 686-707, 2019. ([paper](https://www.sciencedirect.com/science/article/pii/S0021999118307125))
