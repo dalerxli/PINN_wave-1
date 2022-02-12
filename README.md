@@ -1,23 +1,25 @@
 # PINN(s): Physics-Informed Neural Network(s)
 
-This is an implementation of [PINN(s): Physics-Informed Neural Network(s)](https://doi.org/10.1016/j.jcp.2018.10.045) on TensorFlow 2. This code solve 2D wave equation under Dirichlet / Neumann boundary condition without training data (data to fit initial & boundary conditions need to be provided). One can find and change the initial / boundary condition in <code>FDM.py</code> and <code>prp_dat.py</code>.
+This is an implementation of [PINN(s): Physics-Informed Neural Network(s)](https://doi.org/10.1016/j.jcp.2018.10.045) on TensorFlow 2. This code solve 2D wave equation under Dirichlet / Neumann boundary condition without training data (data to fit initial & boundary conditions need to be provided). PINN-derived solution is compared with FDM (Finite Difference Method) approximation to quantitatively show a good agreement. 
 
+One can find and change the initial / boundary condition in <code>FDM.py</code> and <code>prp_dat.py</code>.
 
+<br>
 Training could be accelerated with GPU-utilized  is speeded up with [L-LAAF](https://doi.org/10.1098/rspa.2020.0334)
 
 ## Usage
 Simply type
-<p>
+<br>
 <code>
   python main.py
 </code>
-</p>
+<br>
 to run the code (this includes FDM simulation, PINN training, and inferece). Basic parameters (e.g., network architecture, batch size, initializer, etc.) are found in 
-<p>
+<br>
 <code>
   params.py
 </code>
-</p>
+<br>
 and could be modified depending on the problem setup. 
 
 ## Dependencies
