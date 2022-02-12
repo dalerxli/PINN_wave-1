@@ -14,7 +14,7 @@ from config_gpu import config_gpu
 from params import params
 from prp_dat import prp_dat
 from plot_sol import *
-from FDM import FDM
+from fdm import FDM
 
 def main():
     # gpu confiuration
@@ -116,8 +116,8 @@ def main():
 
             u_diff = u_fdm - u_.numpy().reshape(nx, ny)
             u_mse = np.mean(np.square(u_diff))
-            u_sme = np.std (np.square(u_diff), ddof = 1) / np.sqrt(nx * ny)
-            print("t: %.3f, mse: %.3e, sme: %.3e" % (t, u_mse, u_sme))
+            u_sem = np.std (np.square(u_diff), ddof = 1) / np.sqrt(nx * ny)
+            print("t: %.3f, mse: %.3e, sem: %.3e" % (t, u_mse, u_sem))
 
 if __name__ == "__main__":
     main()
