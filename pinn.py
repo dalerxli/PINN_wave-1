@@ -378,7 +378,7 @@ class PINN:
                 print(">>>>> end time:", datetime.datetime.now())
                 break
             elif es_crt < es_pat:
-                print(">>>>> program terminating with the loss converging to its tolerance.")
+                print(">>>>> program terminating with early stopping triggered.")
                 print("\n************************************************************")
                 print("*****************     MAIN PROGRAM END     *****************")
                 print("************************************************************")
