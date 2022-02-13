@@ -17,7 +17,7 @@ to run the code (this includes FDM simulation, PINN training, inferece, and comp
 <br>
 and could be modified depending on the problem setup. 
 
-## Dependencies
+## Environment
 Tested on 
 <br>
 <code>
