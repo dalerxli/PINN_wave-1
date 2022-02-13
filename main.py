@@ -84,7 +84,7 @@ def main():
     plt.plot(pinn.ep_log, pinn.loss_ini_log, alpha = .3, linestyle = ":", label = "loss_ini")
     plt.plot(pinn.ep_log, pinn.loss_bnd_log, alpha = .3, linestyle = ":", label = "loss_bnd")
     plt.plot(pinn.ep_log, pinn.loss_pde_log, alpha = .3, linestyle = ":", label = "loss_pde")
-    plt.legend(loc = "upper irght")
+    plt.legend(loc = "upper right")
     plt.grid(alpha = .5)
     plt.yscale("log")
     plt.show()
