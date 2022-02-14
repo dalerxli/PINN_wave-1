@@ -142,7 +142,7 @@ class PINN:
                 )
         elif self.b_init == "ones":
             bias = tf.Variable(
-                tf.zeros(shape = [in_dim, out_dim], dtype = self.dat_typ), \
+                tf.ones(shape = [in_dim, out_dim], dtype = self.dat_typ), \
                 dtype = self.dat_typ, name = "b" + str(depth)
                 )
         else:
