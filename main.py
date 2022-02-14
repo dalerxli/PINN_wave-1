@@ -81,9 +81,9 @@ def main():
 
     plt.figure(figsize = (8, 4))
     plt.plot(pinn.ep_log, pinn.loss_log,     alpha = .7, linestyle = "-", label = "loss")
-    plt.plot(pinn.ep_log, pinn.loss_ini_log, alpha = .3, linestyle = ":", label = "loss_ini")
-    plt.plot(pinn.ep_log, pinn.loss_bnd_log, alpha = .3, linestyle = ":", label = "loss_bnd")
-    plt.plot(pinn.ep_log, pinn.loss_pde_log, alpha = .3, linestyle = ":", label = "loss_pde")
+    plt.plot(pinn.ep_log, pinn.loss_ini_log, alpha = .5, linestyle = ":", label = "loss_ini")
+    plt.plot(pinn.ep_log, pinn.loss_bnd_log, alpha = .5, linestyle = ":", label = "loss_bnd")
+    plt.plot(pinn.ep_log, pinn.loss_pde_log, alpha = .5, linestyle = ":", label = "loss_pde")
     plt.legend(loc = "upper right")
     plt.grid(alpha = .5)
     plt.yscale("log")
@@ -116,7 +116,7 @@ def main():
             ax.set_zlim(-1., 1.)
 
             u_diff = u_fdm - u_.numpy().reshape(nx, ny)
-            u_mse = np.mean(np.square(u_diff))
+            u_mse = np.mean(np.square(u_diff)) / np.sqrt(nx * ny)
             u_sem = np.std (np.square(u_diff), ddof = 1) / np.sqrt(nx * ny)
             print("t: %.3f, mse: %.3e, sem: %.3e" % (t, u_mse, u_sem))
 
