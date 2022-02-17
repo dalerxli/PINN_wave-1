@@ -99,7 +99,7 @@ class PINN:
         biases  = []
         alphas  = []
         params  = []
-        for d in range(0, self.depth):   # depth = self.depth
+        for d in range(0, self.depth):
             w = self.weight_init(shape = [strc[d], strc[d + 1]], depth = d)
             b = self.bias_init  (shape = [      1, strc[d + 1]], depth = d)
             weights.append(w)
