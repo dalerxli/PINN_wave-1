@@ -17,6 +17,26 @@ to run the entire code (this includes FDM simulation, PINN training, inferece, a
 <br>
 and could be modified depending on the problem setup. 
 
+<br>
+By default, this code trains PINN on GPU. To run on CPU, one should refer to
+<br>
+<code>
+  main.py
+</code>
+<br>
+and change 
+<br>
+<code>
+  with tf.device("/device:GPU:0"):
+</code>
+<br>
+to
+<br>
+<code>
+  with tf.device("/device:CPU:0"):
+</code>
+<br>
+
 ## Environment
 Tested on 
 <br>
