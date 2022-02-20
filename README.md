@@ -36,6 +36,7 @@ to
   with tf.device("/device:CPU:0"):
 </code>
 <br>
+(found at line 76). 
 
 ## Environment
 Tested on 
